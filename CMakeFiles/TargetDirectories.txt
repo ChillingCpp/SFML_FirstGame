@@ -1,0 +1,3 @@
+D:/sfmlcpp/CMakeFiles/main.dir
+D:/sfmlcpp/CMakeFiles/edit_cache.dir
+D:/sfmlcpp/CMakeFiles/rebuild_cache.dir
