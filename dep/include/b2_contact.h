@@ -85,7 +85,7 @@ struct B2_API b2ContactEdge
 /// The class manages contact between two shapes. A contact exists for each overlapping
 /// AABB in the broad-phase (except if filtered). Therefore a contact object may exist
 /// that has no contact points.
-class B2_API b2Contact // mother class
+class B2_API b2Contact
 {
 public:
 
@@ -208,7 +208,7 @@ protected:
 	b2Contact(b2Fixture* fixtureA, int32 indexA, b2Fixture* fixtureB, int32 indexB);
 	virtual ~b2Contact() {}
 
-	void Update(b2ContactListener* listener); // none needed, callback for some shape...
+	void Update(b2ContactListener* listener);
 
 	static b2ContactRegister s_registers[b2Shape::e_typeCount][b2Shape::e_typeCount];
 	static bool s_initialized;

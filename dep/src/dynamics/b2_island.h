@@ -35,6 +35,9 @@ struct b2ContactVelocityConstraint;
 struct b2Profile;
 
 /// This is an internal class.
+
+// A container of bodies contacts and joints relavent to handling world dynamics.
+// Nơi chứa con trỏ chỉ tới con trở body, contact và joint cho việc solveconstraints 
 class b2Island
 {
 public:
@@ -49,7 +52,7 @@ public:
 		m_jointCount = 0;
 	}
 
-	void Solve(b2Profile* profile, const b2TimeStep& step, const b2Vec2& gravity, bool allowSleep);
+	void Solve(b2Profile* profile, const b2TimeStep& step, const b2Vec2& gravity, bool allowSleep); // main solve object
 
 	void SolveTOI(const b2TimeStep& subStep, int32 toiIndexA, int32 toiIndexB);
 

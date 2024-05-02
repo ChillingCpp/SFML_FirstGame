@@ -119,7 +119,7 @@ struct B2_API b2Vec2
 		return b2IsValid(x) && b2IsValid(y);
 	}
 
-	/// Get the skew vector such that dot(skew_vec, other) == cross(vec, other)
+	/// Get the skew vector such that dot(skew_vec, other) == cross(vec, other) => return 90 counterclockwise vector
 	b2Vec2 Skew() const
 	{
 		return b2Vec2(-y, x);

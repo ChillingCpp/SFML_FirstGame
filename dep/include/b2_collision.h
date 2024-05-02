@@ -269,7 +269,7 @@ struct b2Hull
 /// - less than 3 points
 /// - more than b2_maxPolygonVertices points
 /// This welds close points and removes collinear points.
-b2Hull b2ComputeHull(const b2Vec2* points, int32 count); // using monotone chain instead, for sorted point its O(n) time
+b2Hull b2ComputeHull(const b2Vec2* points, int32 count);
 
 /// This determines if a hull is valid. Checks for:
 /// - convexity
